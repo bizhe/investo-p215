@@ -1,0 +1,85 @@
+#navigation .navbar .my-btn, #intro .my-btn {
+  border: 1px solid #05bb59;
+  padding: 5px 20px;
+  color: #ffffff;
+  background-color: #05bb59;
+  border-radius: 50px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#navigation .navbar .my-btn:hover, #intro .my-btn:hover {
+  background-color: transparent;
+  color: #05bb59;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#welcome {
+  background-color: #6d49eb;
+  padding: 10px 0;
+}
+
+#welcome h5 {
+  margin: 0;
+}
+
+#welcome .welcome-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+#welcome .welcome-list .welcome-list-item {
+  display: inline;
+  margin-left: 10px;
+}
+
+#welcome .welcome-list .welcome-list-item i {
+  font-size: 24px;
+}
+
+#welcome .welcome-list .welcome-list-item span {
+  margin-left: 5px;
+}
+
+#navigation {
+  padding: 15px 0;
+}
+
+#navigation .navbar {
+  margin-top: 45px;
+}
+
+#navigation .navbar .navbar-nav .nav-item {
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+
+#navigation .navbar .navbar-nav .nav-item a {
+  color: #ffffff;
+}
+
+#navigation .navbar .my-btn {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+#navigation .navbar .my-btn:hover {
+  background-color: #ffffff;
+  color: #6d49eb;
+}
+
+#intro {
+  padding: 250px 0;
+  background-image: url(../img/intro-bg.jpg);
+}
+
+#intro p {
+  margin: 40px 0;
+}
+/*# sourceMappingURL=style.css.map */
