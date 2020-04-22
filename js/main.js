@@ -9,6 +9,14 @@ $(document).ready(function () {
         }
     });
 
-   
+
+
+   $(".dropdown").hover(function(){
+        $(this).css("transition", "all 0.3s");
+        $(this).find(".dropdown-menu").addClass("show");
+   }, function(){
+       $(this).css("transition", "all 0.3s");
+        $(this).find(".dropdown-menu").removeClass("show");
+   })
 
 });

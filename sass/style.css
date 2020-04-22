@@ -168,6 +168,10 @@ body {
   color: #6d49eb;
 }
 
+#navigation .navbar .dropdown-item {
+  color: black !important;
+}
+
 #navigation .scrolled {
   top: 0;
   -webkit-transition: all 0.4s;
