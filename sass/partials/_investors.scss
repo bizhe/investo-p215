@@ -1,0 +1,68 @@
+#investors{
+
+    padding: 100px 0;
+
+    .title{
+        &::before{
+            left: -24%;
+        }
+    }
+
+    .investor-item{
+        box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+        margin-top: 40px;
+
+        .investor-img-box{
+
+            img{
+
+            }
+        }
+
+        .investor-info{
+            position: absolute;
+            bottom: -44px;
+            width: 100%;
+            background: white;
+            padding-top: 20px;
+            
+            @include transition(all 0.5s);
+
+            h5{
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0;
+                margin-bottom: 10px;
+                color: $primary-color;
+            }
+            h6{
+                color: $primary-color;
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            .social-link{
+                background-color: $primary-color;
+                padding: 10px 0;
+
+                a{
+                    display: inline-block;
+                    margin-right: 10px;
+                    
+
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            .investor-info{
+                bottom: 0;
+                @include transition(all 0.5s);
+            }
+        }
+    }
+}

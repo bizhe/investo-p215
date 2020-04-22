@@ -448,4 +448,64 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+#investors {
+  padding: 100px 0;
+}
+
+#investors .title::before {
+  left: -24%;
+}
+
+#investors .investor-item {
+  -webkit-box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+#investors .investor-item .investor-info {
+  position: absolute;
+  bottom: -44px;
+  width: 100%;
+  background: white;
+  padding-top: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#investors .investor-item .investor-info h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #19194b;
+}
+
+#investors .investor-item .investor-info h6 {
+  color: #19194b;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+#investors .investor-item .investor-info .social-link {
+  background-color: #19194b;
+  padding: 10px 0;
+}
+
+#investors .investor-item .investor-info .social-link a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#investors .investor-item .investor-info .social-link a i {
+  color: white;
+}
+
+#investors .investor-item:hover .investor-info {
+  bottom: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 /*# sourceMappingURL=style.css.map */
