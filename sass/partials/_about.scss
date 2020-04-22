@@ -1,0 +1,40 @@
+
+#about{
+
+    padding: 100px 0;
+    background-color: rgba(131, 100, 238, 0.05);
+
+    p{
+        color: $primary-color;
+    }
+
+    .know-more-box{
+
+        h3{
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 30px;
+            color: rgba(25, 25, 75, 0.8);  
+        }
+
+        .btn-box{
+            margin-top: 30px;
+
+            .my-btn{
+                @extend %btn-shared;
+                padding: 13px 40px;
+            }
+        }
+
+        
+    }
+
+    .about-img-wrapper{
+        padding: 40px;
+    }
+
+}

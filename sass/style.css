@@ -1,4 +1,4 @@
-#navigation .navbar .my-btn, #intro .my-btn, #intro .invest-btn, #about .know-more-box .btn-box .my-btn {
+#intro .my-btn, #intro .invest-btn, #navigation .navbar .my-btn, #about .know-more-box .btn-box .my-btn {
   border: 1px solid #05bb59;
   padding: 5px 20px;
   color: #ffffff;
@@ -9,7 +9,7 @@
   transition: all 0.5s;
 }
 
-#navigation .navbar .my-btn:hover, #intro .my-btn:hover, #intro .invest-btn:hover, #about .know-more-box .btn-box .my-btn:hover {
+#intro .my-btn:hover, #intro .invest-btn:hover, #navigation .navbar .my-btn:hover, #about .know-more-box .btn-box .my-btn:hover {
   background-color: transparent;
   color: #05bb59;
   -webkit-transition: all 0.5s;
@@ -39,6 +39,50 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+#intro {
+  padding: 250px 0;
+  background-image: url(../img/intro-bg.jpg);
+  position: relative;
+  z-index: 0;
+}
+
+#intro::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #0707077d;
+  z-index: -1;
+}
+
+#intro p {
+  margin: 35px 0;
+}
+
+#intro .my-btn {
+  margin-right: 15px;
+  padding: 12px 30px;
+}
+
+#intro .my-btn:hover {
+  background-color: transparent;
+  color: #05bb59;
+}
+
+#intro .invest-btn {
+  background-color: transparent;
+  padding: 12px 30px;
+  border: 1px solid white;
+}
+
+#intro .invest-btn:hover {
+  background-color: #05bb59;
+  color: #ffffff;
+  border: 1px solid #05bb59;
 }
 
 #welcome {
@@ -99,50 +143,6 @@ body {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   background-color: #19194b;
-}
-
-#intro {
-  padding: 250px 0;
-  background-image: url(../img/intro-bg.jpg);
-  position: relative;
-  z-index: 0;
-}
-
-#intro::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: #0707077d;
-  z-index: -1;
-}
-
-#intro p {
-  margin: 35px 0;
-}
-
-#intro .my-btn {
-  margin-right: 15px;
-  padding: 12px 30px;
-}
-
-#intro .my-btn:hover {
-  background-color: transparent;
-  color: #05bb59;
-}
-
-#intro .invest-btn {
-  background-color: transparent;
-  padding: 12px 30px;
-  border: 1px solid white;
-}
-
-#intro .invest-btn:hover {
-  background-color: #05bb59;
-  color: #ffffff;
-  border: 1px solid #05bb59;
 }
 
 #statics {
@@ -291,6 +291,8 @@ body {
           box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 #features .features-item:hover .img-box-wrapper {
