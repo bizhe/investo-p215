@@ -41,6 +41,32 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
 #intro {
   padding: 250px 0;
   background-image: url(../img/intro-bg.jpg);
@@ -300,5 +326,68 @@ body {
           transform: rotate(-45deg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+#works {
+  padding: 100px 0;
+  background: url(../img/work-bg.jpg);
+  height: 487px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#works .title {
+  color: #ffffff;
+}
+
+#works .play-it {
+  margin-top: 35px;
+}
+
+#works .play-it .play {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#works .play-it .play a {
+  width: 70px;
+  height: 70px;
+  background: #05bb59;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 76px;
+  display: inline-block;
+}
+
+#works .play-it .play a i {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+#works .play-it .play:hover a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: white;
+}
+
+#works .play-it .play:hover i {
+  color: #05bb59;
+}
+
+#works .play-it .play::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 213, 99, 0.38);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+          animation: pulse-border 1500ms ease-out infinite;
 }
 /*# sourceMappingURL=style.css.map */
