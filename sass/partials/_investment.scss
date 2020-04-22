@@ -1,0 +1,49 @@
+#investment{
+    padding: 100px 0;
+    
+
+    .invest-item{
+        padding: 30px 0 40px;
+        box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+        margin-top: 40px;
+        @include transition(all 0.3s);
+
+        h4{
+            margin-bottom: 30px;
+        }
+
+        .percent-box{
+            background-color: $primary-color;
+            padding: 12px 0;
+
+            p{
+                font-size: 35px;
+                color: $text-color-white;
+                margin: 0;
+            }
+        }
+
+        .invest-list{
+            list-style-type: none;
+            padding: 15px;
+            margin-top: 20px;
+
+            .invest-list-item{
+                margin-bottom: 15px;
+                border-bottom: 1px solid rgba(25, 25, 75, 0.1);;
+            }
+        }
+
+        .invest-btn{
+            @extend %btn-shared;
+            padding: 10px 25px
+        }
+
+        &:hover{
+            transform: translateY(-5px);
+            @include transition(all 0.3s);
+        }
+
+    }
+
+}

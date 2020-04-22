@@ -18,3 +18,7 @@
 .title{
     @include title;
 }
+
+.subtitle{
+    color: $primary-color;
+}

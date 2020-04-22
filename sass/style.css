@@ -1,4 +1,4 @@
-#intro .my-btn, #intro .invest-btn, #navigation .navbar .my-btn, #about .know-more-box .btn-box .my-btn {
+#intro .my-btn, #intro .invest-btn, #navigation .navbar .my-btn, #about .know-more-box .btn-box .my-btn, #investment .invest-item .invest-btn {
   border: 1px solid #05bb59;
   padding: 5px 20px;
   color: #ffffff;
@@ -9,7 +9,7 @@
   transition: all 0.5s;
 }
 
-#intro .my-btn:hover, #intro .invest-btn:hover, #navigation .navbar .my-btn:hover, #about .know-more-box .btn-box .my-btn:hover {
+#intro .my-btn:hover, #intro .invest-btn:hover, #navigation .navbar .my-btn:hover, #about .know-more-box .btn-box .my-btn:hover, #investment .invest-item .invest-btn:hover {
   background-color: transparent;
   color: #05bb59;
   -webkit-transition: all 0.5s;
@@ -35,6 +35,10 @@
   top: 39%;
   left: -39%;
   opacity: 0.35;
+}
+
+.subtitle {
+  color: #19194b;
 }
 
 body {
@@ -389,5 +393,55 @@ body {
   z-index: -1;
   -webkit-animation: pulse-border 1500ms ease-out infinite;
           animation: pulse-border 1500ms ease-out infinite;
+}
+
+#investment {
+  padding: 100px 0;
+}
+
+#investment .invest-item {
+  padding: 30px 0 40px;
+  -webkit-box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#investment .invest-item h4 {
+  margin-bottom: 30px;
+}
+
+#investment .invest-item .percent-box {
+  background-color: #19194b;
+  padding: 12px 0;
+}
+
+#investment .invest-item .percent-box p {
+  font-size: 35px;
+  color: #ffffff;
+  margin: 0;
+}
+
+#investment .invest-item .invest-list {
+  list-style-type: none;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#investment .invest-item .invest-list .invest-list-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(25, 25, 75, 0.1);
+}
+
+#investment .invest-item .invest-btn {
+  padding: 10px 25px;
+}
+
+#investment .invest-item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
