@@ -13,3 +13,8 @@
         @include transition(all 0.5s);
     }
   }
+
+
+.title{
+    @include title;
+}

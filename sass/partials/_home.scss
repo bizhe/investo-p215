@@ -28,9 +28,14 @@
 }
 
 #navigation{
-    padding: 15px 0;
+    
+
+    
 
     .navbar{
+        top: 45px;
+        padding: 15px 0;
+        @include transition(all 0.4s);
 
         .navbar-nav{
 
@@ -56,18 +61,210 @@
             }
         }
     }
+
+    .scrolled{
+        top: 0;
+        @include transition(all 0.4s);
+        background-color: $primary-color;
+    }
 }
 
 
 #intro{
     padding: 250px 0;
     background-image: url(../img/intro-bg.jpg);
+    position: relative;
+    z-index: 0;
+
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        position: absolute;
+        background-color: #0707077d;
+        z-index: -1;
+    }
 
     p{
-        margin: 250px 0;
+        margin: 35px 0;
     }
 
     .my-btn{
         @extend %btn-shared;
+        margin-right: 15px;
+        padding: 12px 30px;
+
+        &:hover{
+            background-color: transparent;
+            color: $secondary-color;
+        }
     }
+
+    .invest-btn{
+        @extend %btn-shared;
+        background-color: transparent;
+        padding: 12px 30px;
+        border: 1px solid white;
+
+        &:hover{
+            background-color: $secondary-color;
+            color: $text-color-white;
+            border: 1px solid $secondary-color;
+        }
+    }
+}
+
+
+#statics{
+    padding: 100px 0;
+
+    p{
+        color: $primary-color;
+    }
+
+    .statics-item{
+        margin-top: 50px;
+        box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+        padding: 35px 0;
+        border-bottom: 5px solid $helper-color;
+        @include transition(all 0.5s);
+
+        .img-box-wrapper{
+            display: inline-block;
+            border: 10px solid rgba(109, 73, 235, 0.2);
+            transform: rotate(45deg);
+            @include transition(all 0.5s);
+
+            .statics-img-box{
+                background-color: $helper-color;
+                width: 50px;
+                height: 50px;
+                img{
+                    padding: 10px;
+                }
+    
+            }
+        }
+        
+
+        h3{
+            margin-top: 30px;
+            font-size: 34px;
+        }
+
+        h6{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        &:hover{
+            box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.8);
+            @include transition(all 0.5s);
+            .img-box-wrapper{
+                transform: rotate(0deg);
+                @include transition(all 0.5s)
+            }
+        }
+    }
+
+    
+}
+
+
+#about{
+
+    padding: 100px 0;
+    background-color: rgba(131, 100, 238, 0.05);
+
+    p{
+        color: $primary-color;
+    }
+
+    .know-more-box{
+
+        h3{
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 30px;
+            color: rgba(25, 25, 75, 0.8);  
+        }
+
+        .btn-box{
+            margin-top: 30px;
+
+            .my-btn{
+                @extend %btn-shared;
+                padding: 13px 40px;
+            }
+        }
+
+        
+    }
+
+    .about-img-wrapper{
+        padding: 40px;
+    }
+
+}
+
+#features{
+
+    padding: 100px 0;
+    h2{
+        &::before{
+            left: -24%;
+        }
+    }
+    p{
+        color: $primary-color;
+    }
+
+    .features-item{
+        box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+        padding: 35px;
+        margin-top: 30px;
+        @include transition(all 0.5s);
+
+        .img-box-wrapper{
+            display: inline-block;
+            border: 10px solid rgba(109, 73, 235, 0.2);
+            @include transition(all 0.5s);
+
+            .features-img-box{
+                background-color: $helper-color;
+                width: 50px;
+                height: 50px;
+                img{
+                    padding: 10px;
+                }
+    
+            }
+        }
+        
+        h4{
+            margin: 25px 0;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 30px;
+            color: rgba(25, 25, 75, 0.8);  
+        }
+
+        &:hover{
+            box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.8);
+            @include transition(all 0.5s);
+            .img-box-wrapper{
+                transform: rotate(-45deg);
+                @include transition(all 0.5s)
+            }
+        }
+    }
+
 }
