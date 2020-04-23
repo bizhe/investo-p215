@@ -21,7 +21,6 @@ $(document).ready(function () {
 
 
    // client says slider
-
    if($(".items .item").length){
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -46,6 +45,25 @@ $(document).ready(function () {
             }
         }
     })
+   }
+
+
+   //transaction tab
+   if($("#transaction .actions").length){
+       $(".actions a").click(function (e) { 
+           e.preventDefault();
+
+           if(!$(this).hasClass("active")){
+               var id = $(this).attr("href");
+                $(".actions .active").removeClass("active");
+               $(this).addClass("active");
+               
+               $(".contents .active").removeClass("active");
+               $(id).addClass("active")
+
+           }
+           
+       });
    }
 
    

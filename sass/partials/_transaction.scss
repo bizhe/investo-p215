@@ -1,0 +1,113 @@
+#transaction{
+    padding: 100px 0;
+
+
+    .title{
+
+        &::before{
+            left: -24%;
+        }
+    }
+
+    table{
+        box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+        thead{
+
+            background-color: $helper-color;
+            color: $text-color-white;
+            th{
+                padding: 25px;
+            }
+        }
+        tbody{
+
+            tr{
+                th{
+                    padding-left: 30px;
+                    .profile-box{
+                        display: flex;
+                        align-items: center;
+                        .profile{
+                          
+                            border-radius: 50%;
+                            overflow: hidden;
+                            border: 1px solid $secondary-color;
+                            padding: 3px;
+
+                            img{
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                            }
+    
+                        }
+    
+                        .profile-name{
+                            margin-left: 15px;
+    
+                        }
+                    }
+                }
+
+                td{
+                    padding: 28px 15px;
+                    
+                }
+            }
+
+        }
+    }
+
+    .actions{
+        margin-top: 20px;
+
+        .tr-btn{
+            display: inline-block;
+            margin-right: 25px;
+                border: 1px solid $secondary-color;
+                padding: 12px 20px;
+                color: $secondary-color;
+                background-color: transparent;
+                border-radius: 50px;
+                text-decoration: none;
+                @include transition(all 0.5s);
+
+                &:hover{
+                    background-color: $secondary-color;
+                    color: $text-color-white;
+                    @include transition(all 0.5s);
+                }
+            
+
+            &.active{
+                border: 1px solid $secondary-color;
+                padding: 12px 20px;
+                color: $text-color-white;
+                background-color: $secondary-color;
+                border-radius: 50px;
+                text-decoration: none;
+                @include transition(all 0.5s);
+
+                // &:hover{
+                //     background-color: transparent;
+                //     color: $secondary-color;
+                //     @include transition(all 0.5s);
+                // }
+            }
+            
+        }
+    }
+
+    .contents{
+        margin-top: 50px;
+
+        .content{
+            display: none;
+
+            &.active{
+                display: block;
+            }
+
+        }
+    }
+}

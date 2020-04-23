@@ -681,4 +681,107 @@ body {
   background-position: center center;
   z-index: -1;
 }
+
+#transaction {
+  padding: 100px 0;
+}
+
+#transaction .title::before {
+  left: -24%;
+}
+
+#transaction table {
+  -webkit-box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+}
+
+#transaction table thead {
+  background-color: #6d49eb;
+  color: #ffffff;
+}
+
+#transaction table thead th {
+  padding: 25px;
+}
+
+#transaction table tbody tr th {
+  padding-left: 30px;
+}
+
+#transaction table tbody tr th .profile-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#transaction table tbody tr th .profile-box .profile {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #05bb59;
+  padding: 3px;
+}
+
+#transaction table tbody tr th .profile-box .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#transaction table tbody tr th .profile-box .profile-name {
+  margin-left: 15px;
+}
+
+#transaction table tbody tr td {
+  padding: 28px 15px;
+}
+
+#transaction .actions {
+  margin-top: 20px;
+}
+
+#transaction .actions .tr-btn {
+  display: inline-block;
+  margin-right: 25px;
+  border: 1px solid #05bb59;
+  padding: 12px 20px;
+  color: #05bb59;
+  background-color: transparent;
+  border-radius: 50px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#transaction .actions .tr-btn:hover {
+  background-color: #05bb59;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#transaction .actions .tr-btn.active {
+  border: 1px solid #05bb59;
+  padding: 12px 20px;
+  color: #ffffff;
+  background-color: #05bb59;
+  border-radius: 50px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#transaction .contents {
+  margin-top: 50px;
+}
+
+#transaction .contents .content {
+  display: none;
+}
+
+#transaction .contents .content.active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
