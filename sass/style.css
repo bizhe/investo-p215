@@ -172,6 +172,10 @@ body {
   color: black !important;
 }
 
+#navigation .navbar .dropdown-menu {
+  margin: 0;
+}
+
 #navigation .scrolled {
   top: 0;
   -webkit-transition: all 0.4s;
@@ -450,6 +454,7 @@ body {
 }
 
 #investors {
+  background-color: rgba(131, 100, 238, 0.05);
   padding: 100px 0;
 }
 
