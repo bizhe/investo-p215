@@ -1,0 +1,92 @@
+#commission{
+
+    padding: 100px 0;
+
+    .title{
+
+        &::before{
+            left: -24%;
+        }
+    }
+
+
+    .list{
+        display: flex;
+        margin-top: 70px;
+
+        .com-item{
+            width: 33%;
+            text-align: center;
+            padding: 70px 50px 40px;
+           
+            position: relative;
+
+            .perc{
+                position: absolute;
+                left: 32%;
+                top: -50px;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: $text-color-white;
+
+                span{
+                    font-size: 30px;
+                    font-weight: 800;
+                }
+            }
+
+            h5{
+                color: $text-color-white;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -12px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 69.5px 0 69.5px 12px;
+                z-index: 2;
+            }
+        }
+
+
+        .com-item:nth-child(odd){
+            background: $helper-color;
+            .perc{
+                -webkit-box-shadow: 0px -2px 50px -5px rgba(109, 73, 235, 0.5);
+                box-shadow: 0px -2px 50px -5px rgba(109, 73, 235, 0.5);
+                span{
+                    color: $helper-color;
+                }
+            }
+
+            &::after{
+                border-color: transparent transparent transparent $helper-color;
+            }
+
+        }
+
+        .com-item:nth-child(even){
+            background: $secondary-color;
+            .perc{
+                -webkit-box-shadow: 0px -2px 50px -5px rgba(5, 187, 89, 0.5);
+                box-shadow: 0px -2px 50px -5px rgba(5, 187, 89, 0.5);
+                span{
+                    color: $secondary-color;
+                }
+            }
+
+            &::after{
+                border-color: transparent transparent transparent $secondary-color;
+            }
+        }
+    }
+}
