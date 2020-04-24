@@ -983,4 +983,15 @@ body {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+footer {
+  background-color: #19194b;
+  padding: 20px 0;
+}
+
+footer p {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
