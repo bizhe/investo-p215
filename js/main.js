@@ -22,7 +22,7 @@ $(document).ready(function () {
 
    // client says slider
    if($(".items .item").length){
-    $('.owl-carousel').owlCarousel({
+    $('#client-slider').owlCarousel({
         loop:true,
         margin:20,
         autoplay: true,
@@ -64,6 +64,34 @@ $(document).ready(function () {
            }
            
        });
+   }
+
+
+   //brand slider
+   if($(".brands .item").length){
+    $('#brand-slider').owlCarousel({
+        loop:true,
+        margin:20,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsiveClass:true,
+        nav: false, 
+        dots: false,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:5,
+                nav:false
+            },
+            1000:{
+                items:5,
+            }
+        }
+    })
    }
 
    

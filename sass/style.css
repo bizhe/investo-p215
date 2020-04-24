@@ -786,6 +786,7 @@ body {
 }
 
 #commission {
+  background-color: rgba(131, 100, 238, 0.05);
   padding: 100px 0;
 }
 
@@ -874,5 +875,49 @@ body {
 
 #commission .list .com-item:nth-child(even)::after {
   border-color: transparent transparent transparent #05bb59;
+}
+
+#methods {
+  position: relative;
+  padding: 100px 0;
+  background-image: url(../img/intro-bg.jpg);
+}
+
+#methods .title {
+  color: #ffffff;
+}
+
+#methods .title::before {
+  left: -24%;
+}
+
+#methods .subtitle {
+  color: #ffffff;
+}
+
+#methods::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(#19194b, #000428);
+  opacity: 0.8;
+}
+
+#methods .brands {
+  margin-top: 50px;
+}
+
+#methods .brands .item .brand-box {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+
+#methods .brands .item .brand-box img {
+  padding: 20px;
+  -webkit-filter: brightness(100%) invert(1);
+          filter: brightness(100%) invert(1);
 }
 /*# sourceMappingURL=style.css.map */
