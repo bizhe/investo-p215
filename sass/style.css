@@ -1,4 +1,4 @@
-#intro .my-btn, #intro .invest-btn, #navigation .navbar .my-btn, #about .know-more-box .btn-box .my-btn, #investment .invest-item .invest-btn, #calculate .calc-btn {
+#intro .my-btn, #intro .invest-btn, #navigation .navbar .my-btn, #about .know-more-box .btn-box .my-btn, #investment .invest-item .invest-btn, #calculate .calc-btn, #blog .blog-item .blog-info .blog-btn {
   border: 1px solid #05bb59;
   padding: 5px 20px;
   color: #ffffff;
@@ -9,7 +9,7 @@
   transition: all 0.5s;
 }
 
-#intro .my-btn:hover, #intro .invest-btn:hover, #navigation .navbar .my-btn:hover, #about .know-more-box .btn-box .my-btn:hover, #investment .invest-item .invest-btn:hover, #calculate .calc-btn:hover {
+#intro .my-btn:hover, #intro .invest-btn:hover, #navigation .navbar .my-btn:hover, #about .know-more-box .btn-box .my-btn:hover, #investment .invest-item .invest-btn:hover, #calculate .calc-btn:hover, #blog .blog-item .blog-info .blog-btn:hover {
   background-color: transparent;
   color: #05bb59;
   -webkit-transition: all 0.5s;
@@ -919,5 +919,68 @@ body {
   padding: 20px;
   -webkit-filter: brightness(100%) invert(1);
           filter: brightness(100%) invert(1);
+}
+
+#blog {
+  padding: 100px 0;
+}
+
+#blog .title::before {
+  left: -29%;
+}
+
+#blog .blog-item {
+  -webkit-box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 20px -4px rgba(0, 0, 0, 0.3);
+}
+
+#blog .blog-item .blog-img {
+  overflow: hidden;
+}
+
+#blog .blog-item .blog-img img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#blog .blog-item .blog-info {
+  padding: 30px 20px 40px;
+}
+
+#blog .blog-item .blog-info h4 {
+  color: #19194b;
+  position: relative;
+}
+
+#blog .blog-item .blog-info h4::after {
+  content: '';
+  width: 50px;
+  height: 8px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(25, 25, 76, 0)), to(#00d563));
+  background: linear-gradient(to left, rgba(25, 25, 76, 0), #00d563);
+  position: absolute;
+  top: 39%;
+  right: 7%;
+  opacity: 0.35;
+}
+
+#blog .blog-item .blog-info p {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(25, 25, 75, 0.8);
+  margin-top: 20px;
+}
+
+#blog .blog-item .blog-info .blog-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+#blog .blog-item:hover .blog-img img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
